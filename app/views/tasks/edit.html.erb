@@ -1,0 +1,15 @@
+<h2>Edit <%= @task.title %></h2>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :done? %>
+  <%= f.check_box :completed %>
+  <%= f.submit %>
+<% end %>
+
+<div class="container">
+  <%= link_to "<back", tasks_path %>
+</div>

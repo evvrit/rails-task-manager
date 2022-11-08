@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(104, 173, 175, 0.4) */
+ }

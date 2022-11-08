@@ -1,0 +1,10 @@
+<div><h2>Create a new task</h2></div>
+<div>
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+</div>
